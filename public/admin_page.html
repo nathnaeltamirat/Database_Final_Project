@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin_page.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <h2>Admin Dashboard</h2>
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab(event, 'students')">Students</button>
+      <button class="tab-button" onclick="openTab(event, 'courses')">Courses</button>
+      <button class="tab-button" onclick="openTab(event, 'departments')">Departments</button>
+    </div>
+
+    <div id="students" class="tab-content active">
+      <h3>Manage Students</h3>
+      <p>Here you can view, add, update, or delete student records.</p>
+      <!-- Student management content goes here -->
+    </div>
+
+    <div id="courses" class="tab-content">
+      <h3>Manage Courses</h3>
+      <p>Manage course details and assignments here.</p>
+      <!-- Course management content goes here -->
+    </div>
+
+    <div id="departments" class="tab-content">
+      <h3>Manage Departments</h3>
+      <p>Handle department data here.</p>
+      <!-- Department management content goes here -->
+    </div>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      const tabContents = document.querySelectorAll('.tab-content');
+      const tabButtons = document.querySelectorAll('.tab-button');
+
+      tabContents.forEach(content => content.classList.remove('active'));
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>

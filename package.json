@@ -1,0 +1,32 @@
+{
+  "name": "database_final_project",
+  "version": "1.0.0",
+  "description": "Final project for database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "start": "node --watch server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathnaeltamirat/Database_Final_Project.git"
+  },
+  "keywords": [
+    "database",
+    "student",
+    "portal"
+  ],
+  "author": "nathnael tamirat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathnaeltamirat/Database_Final_Project/issues"
+  },
+  "homepage": "https://github.com/nathnaeltamirat/Database_Final_Project#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "logger": "^0.0.1",
+    "mysql2": "^3.14.1"
+  }
+}
