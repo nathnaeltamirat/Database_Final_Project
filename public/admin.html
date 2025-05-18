@@ -7,47 +7,57 @@
   <link rel="stylesheet" href="/admin.css">
 </head>
 <body>
-  <h1>Admin Dashboard</h1>
+  <div class="container">
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
 
-  <section class="login-section">
-    <h2 id = 'title'>Login</h2>
-    <form id="login-form">
-      <label>Username: <input type="text" id="username" required></label><br>
-      <label>Password: <input type="password" id="password" required></label><br>
-      <button type="submit">Login</button>
-    </form>
-  </section>
+    <section class="login-section card">
+      <h2 id="title">Login</h2>
+      <form id="login-form">
+        <label>Username:<input type="text" id="username" required></label>
+        <label>Password:<input type="password" id="password" required></label>
+        <button type="submit">Login</button>
+      </form>
+    </section>
 
-  <section id="admin-panel" style="display: none;">
-    <h2>Registered Students</h2>
-    <button onclick="fetchStudents()">Load Students</button>
-  <div id="search-section">
-  <input type="number" id="searchStudentID" placeholder="Enter Student ID" />
-  <button id="searchBtn">Search</button>
-</div>
-    <table id="student-table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>DOB</th>
-          <th>Department</th>
-          <th>City</th>
-          <th>Phones</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <section id="admin-panel" style="display: none;">
+      <div class="card">
+        <h2>Registered Students</h2>
+        <div class="controls">
+          <button onclick="fetchStudents()">Load All Students</button>
+          <div id="search-section">
+            <input type="number" id="searchStudentID" placeholder="Enter Student ID" />
+            <button id="searchBtn">Search</button>
+          </div>
+        </div>
+        <table id="student-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>DOB</th>
+              <th>Department</th>
+              <th>City</th>
+              <th>Phones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
 
-    <h2>Add New Course</h2>
-    <form id="course-form">
-      <label>Course Name: <input type="text" id="courseName" required></label><br>
-      <label>Credit Hours: <input type="number" id="creditHours" required></label><br>
-      <label>Department ID: <input type="number" id="departmentID" required></label><br>
-      <button type="submit">Add Course</button>
-    </form>
-  </section>
+      <div class="card">
+        <h2>Add New Course</h2>
+        <form id="course-form">
+          <label>Course Name:<input type="text" id="courseName" required></label>
+          <label>Credit Hours:<input type="number" id="creditHours" required></label>
+          <label>Department ID:<input type="number" id="departmentID" required></label>
+          <button type="submit">Add Course</button>
+        </form>
+      </div>
+    </section>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="js/admin.js"></script>

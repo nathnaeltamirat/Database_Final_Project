@@ -208,9 +208,10 @@ app.post("/admin/enroll", async (req, res) => {
         }
         const [existing] = await pool.query(
         `SELECT * FROM enrollment 
-        WHERE studentID = ? AND courseID = ? AND scheduleID = ? AND year = ? AND semester = ?`,
-        [studentID, courseID, scheduleID, year, semester]
+        WHERE studentID = ? AND courseID = ?`,
+        [studentID, courseID]
         );
+    
 
         if (existing.length > 0) {
         return res.status(400).json({ message: "Student already enrolled in this course for the given schedule, year, and semester." });

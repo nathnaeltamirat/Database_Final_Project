@@ -6,33 +6,35 @@
   <link rel="stylesheet" href="student_course_mark.css" />
 </head>
 <body>
-  <h1>Student Course Enrollment and Marks</h1>
+  <div class="container">
+    <h1>Student Course Enrollment & Marks</h1>
 
-  <section>
-    <h2>Enroll Student to Course</h2>
-    <form id="enroll-form">
-      <input type="number" id="studentID" placeholder="Student ID" required />
-      <input type="number" id="courseID" placeholder="Course ID" required />
-      <input type="number" id="scheduleID" placeholder="Schedule ID" required />
-      <input type="number" id="year" placeholder="Year" required />
-      <select id="semester" required>
-        <option value="">Select Semester</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-      </select>
-      <button type="submit">Enroll</button>
-    </form>
-  </section>
+    <section>
+      <h2>Enroll Student to Course</h2>
+      <form id="enroll-form" class="form-box">
+        <input type="number" id="studentID" placeholder="Student ID" required />
+        <input type="number" id="courseID" placeholder="Course ID" required />
+        <input type="number" id="scheduleID" placeholder="Schedule ID" required />
+        <input type="number" id="year" placeholder="Year" required />
+        <select id="semester" required>
+          <option value="">Select Semester</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <button type="submit">Enroll Student</button>
+      </form>
+    </section>
 
-  <section>
-    <h2>Assign Mark to Student</h2>
-    <form id="mark-form">
-      <input type="number" id="mark-studentID" placeholder="Student ID" required />
-      <input type="number" id="mark-courseID" placeholder="Course ID" required />
-      <input type="number" id="mark-value" placeholder="Mark" required />
-      <button type="submit">Assign Mark</button>
-    </form>
-  </section>
+    <section>
+      <h2>Assign Mark to Student</h2>
+      <form id="mark-form" class="form-box">
+        <input type="number" id="mark-studentID" placeholder="Student ID" required />
+        <input type="number" id="mark-courseID" placeholder="Course ID" required />
+        <input type="number" id="mark-value" placeholder="Mark" required />
+        <button type="submit">Assign Mark</button>
+      </form>
+    </section>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="js/student_course_mark.js"></script>

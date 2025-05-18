@@ -8,22 +8,31 @@
 </head>
 <body>
   <div class="container">
-    <h1>Mark Attendance</h1>
+    <h1>Attendance Marking</h1>
     <form id="attendanceForm">
-      <label for="studentID">Student ID:</label>
-      <input type="number" id="studentID" required />
+      <div class="form-group">
+        <label for="studentID">Student ID</label>
+        <input type="number" id="studentID" placeholder="Enter Student ID" required />
+      </div>
 
-      <label for="scheduleID">Schedule ID:</label>
-      <input type="number" id="scheduleID" required />
+      <div class="form-group">
+        <label for="scheduleID">Schedule ID</label>
+        <input type="number" id="scheduleID" placeholder="Enter Schedule ID" required />
+      </div>
 
-      <label for="date">Date:</label>
-      <input type="date" id="date" required />
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" required />
+      </div>
 
-      <label for="status">Status:</label>
-      <select id="status" required>
-        <option value="Present">Present</option>
-        <option value="Absent">Absent</option>
-      </select>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status" required>
+          <option value="">Select Status</option>
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+        </select>
+      </div>
 
       <button type="submit">Submit Attendance</button>
     </form>
