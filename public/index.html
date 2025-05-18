@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Student Portal</h1>
+        <p>Check your personal and academic information</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <h2>Find Your Information</h2>
+      <div class="search-bar">
+        <input type="number" id="studentID" placeholder="Enter Student ID" />
+        <button onclick="fetchStudentInfo()">Get Info</button>
+      </div>
+    </section>
+
+    <section class="info-section" id="studentInfo" style="display:none">
+      <h2>Student Profile</h2>
+      <div class="card">
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Department:</strong> <span id="department"></span></p>
+        <p><strong>City:</strong> <span id="city"></span></p>
+        <p><strong>Phones:</strong> <span id="phones"></span></p>
+      </div>
+
+      <h2>Attendance</h2>
+      <div class="card" id="attendanceSection">Loading...</div>
+
+      <h2>Courses</h2>
+      <div class="card" id="coursesSection">Loading...</div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

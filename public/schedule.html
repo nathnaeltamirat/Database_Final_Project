@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedule Management</title>
+  <link rel="stylesheet" href="schedule.css" />
+</head>
+<body>
+  <h1>Course Schedule Management</h1>
+
+  <form id="schedule-form">
+    <label for="courseID">Course ID:</label>
+    <input type="number" id="courseID" required />
+
+    <label for="day">Day:</label>
+    <select id="day" required>
+      <option value="">Select</option>
+      <option>Saturday</option>
+      <option>Sunday</option>
+      <option>Monday</option>
+      <option>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+    </select>
+
+    <label for="startTime">Start Time:</label>
+    <input type="time" id="startTime" required />
+
+    <label for="endTime">End Time:</label>
+    <input type="time" id="endTime" required />
+
+    <button type="submit">Add Schedule</button>
+  </form>
+
+  <hr/>
+
+  <h2>All Schedules</h2>
+  <table id="schedule-table">
+    <thead>
+      <tr>
+        <th>Schedule ID</th>
+        <th>Course Name</th>
+        <th>Day</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/schedule.js"></script>
+</body>
+</html>

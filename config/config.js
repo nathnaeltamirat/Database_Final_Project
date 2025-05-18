@@ -1,5 +1,4 @@
-const dotenv = require("dotenv");
-dotenv.config();
+require("dotenv").config({ path: require('path').resolve(__dirname, '../.env') });
 
 module.exports = {
   env: {
@@ -14,3 +13,4 @@ module.exports = {
     },
   },
 };
+
