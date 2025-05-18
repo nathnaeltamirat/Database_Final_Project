@@ -102,3 +102,29 @@ tr:nth-child(even) {
     font-size: 0.85rem;
   }
 }
+nav {
+  background-color: #007bff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #e0e0e0;
+}

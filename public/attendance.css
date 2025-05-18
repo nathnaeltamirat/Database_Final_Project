@@ -65,7 +65,23 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+    nav {
+      background-color: #007bff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
 @media (max-width: 500px) {
   .container {
     padding: 1.5rem;

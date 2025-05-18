@@ -14,6 +14,10 @@ app.get("/admin", (req, res) => {
     console.log(req.body);
     res.sendFile(__dirname + "/public/admin.html");
     });
+app.get("/register", (req, res) => {
+    console.log(req.body);
+    res.sendFile(__dirname + "/public/student_registeration.html");
+    });
 app.get("/schedule", (req, res) => {
     console.log(req.body);
     res.sendFile(__dirname + "/public/schedule.html");
