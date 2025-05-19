@@ -5,7 +5,7 @@ async function createTables() {
   const connection = await pool.getConnection();
   await connection.beginTransaction();
 try {
-    // Clean all data from tables (truncate in reverse FK order)
+
     await connection.query(`SET FOREIGN_KEY_CHECKS = 0;`);
     await connection.query(`TRUNCATE TABLE studPhone;`);
     await connection.query(`TRUNCATE TABLE attendance;`);
