@@ -7,16 +7,17 @@ This is a MySQL-based database project for managing a student information system
 ---
 
 ## 📁 Project Structure
-   
-Database_Final_Project/
-├── config/
-│ ├── config.js # Environment-based config setup
-│ └── db.js # MySQL connection pool setup
-├── model/
-│ └── create_table.js # Script to create database tables
-├── .env # Environment variables
-├── package.json
-└── README.md
+  ```bash 
+Database_Final_Project/  
+├── config/  
+│ ├── config.js # Environment-based config setup  
+│ └── db.js # MySQL connection pool setup  
+├── model/  
+│ └── create_table.js # Script to create database tables  
+├── .env # Environment variables  
+├── package.json  
+└── README.md  
+```
 ## SETUP Instruction
 ## ⚙️ Setup Instructions
 
